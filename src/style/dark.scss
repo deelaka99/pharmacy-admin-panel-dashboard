@@ -56,8 +56,15 @@
             border: none;
 
             .viewButton, .deleteButton{
-                color: gray;
+                color: white;
                 border: none;
+            }
+
+            .viewButton{
+                background-color: green;
+            }
+            .deleteButton{
+                background-color: red;
             }
         }
     }
