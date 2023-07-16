@@ -1,5 +1,6 @@
 import "./datatable.scss";
 import { DataGrid } from "@mui/x-data-grid";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const columns = [
@@ -104,7 +105,7 @@ const rows = [
   { id: 9, lastName: "Roxie", firstName: "Harvey", age: 65, status: "Active" },
 ];
 
-const Datatable = () => {
+const Datatable = () => {X
   return (
     <div className="datatable">
       <div className="datatableTitle">
@@ -118,6 +119,7 @@ const Datatable = () => {
         </Link>
       </div>
       <DataGrid
+        className="datagrid"
         rows={rows}
         columns={columns}
         initialState={{
